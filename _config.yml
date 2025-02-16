@@ -6,7 +6,7 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: ko
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Seoul
@@ -14,20 +14,26 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Dynamo J # the main title
+title: Sandbox DEVHUB
 
-tagline: Salesforce Developer # it will display as the sub-title
+tagline: Salesforce 개발자와 함께하는 실전 LWC 및 Apex 솔루션 # it will display as the subtitle
 
-description: >- # used by seo meta and the atom feed
-  Salesforce Developer 업무 경험과 개인 학습을 통해 습득한 Salesforce 지식과 개발 노하우를 기록하고 공유하는 기술 블로그입니다.
+description: "LWC, Apex 등 Salesforce 개발 블로그입니다. 인사이트와 솔루션을 공유합니다."
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://dy-jeong9.github.io/"
+url: "https://sandboxdevhub.github.io"
 
 github:
-  username: dy-jeong9 # change to your github username
+  username: sandboxdevhub
 
+#twitter:
+#  username: twitter_username # change to your Twitter username
+
+social:
+  name: "Sandbox DEVHUB"
+  links:
+    - https://github.com/sandboxdevhub
 # twitter:
 #   username: # change to your twitter username
 
@@ -42,6 +48,7 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
+
 
 # Site Verification Settings
 webmaster_verifications:
@@ -104,16 +111,16 @@ social_preview_image: # string, local or CORS resources
 # boolean type, the global switch for TOC in posts.
 toc: true
 
-comments:
-  # Global switch for the post comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+ccomments:
+  # Global switch for the post-comment system. Keeping it empty means disabled.
+  provider: utterances # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo: sandboxdevhub/sandboxdevhub.github.io # <gh-username>/<repo>
+    issue_term: pathname # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
@@ -224,3 +231,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
